@@ -40,6 +40,5 @@ def get_username(url):
 
 
 ratingkey = [[InlineKeyboardButton(
-    "Reklam Ver", url="https://ararim.anasayfa.link/sayfa/iletisim"
     "Android Uygulamasını İndir", url="https://play.google.com/store/apps/details?id=com.mobuyg.ararim"
     )]]
