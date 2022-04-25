@@ -38,10 +38,6 @@ def get_username(url):
         return "incorrect format"
 
 
-reklamkey = [[InlineKeyboardButton(
-    "Reklam Ver", url="https://ararim.anasayfa.link/sayfa/iletisim"
-    )]]
-
 
 ratingkey = [[InlineKeyboardButton(
     "Android Uygulamasını İndir", url="https://play.google.com/store/apps/details?id=com.mobuyg.ararim"
