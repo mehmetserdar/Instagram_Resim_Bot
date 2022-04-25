@@ -5,7 +5,7 @@ from telegram.utils.helpers import escape_markdown as es
 def welcome_msg():
     welcome_msg = '''<b>Bot'a Hoş Geldiniz</b>👋
     <i>DP'lerini almak için bana herhangi birinin instagram kullanıcı adını veya profil URL'sini gönderin</i>
-    ör: <b>goturkiye</b> , <b>acunilicali</b>, <b>fener</b> vb.'''
+    ör: <b>goturkiye</b> , <b>acunilicali</b> vb.'''
 
     return welcome_msg
 
@@ -37,6 +37,10 @@ def get_username(url):
     except Exception:
         return "incorrect format"
 
+
+reklamkey = [[InlineKeyboardButton(
+    "Reklam Ver", url="https://ararim.anasayfa.link/sayfa/iletisim"
+    )]]
 
 
 ratingkey = [[InlineKeyboardButton(
