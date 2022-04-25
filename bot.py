@@ -62,6 +62,7 @@ def username(update, context):
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
             update.message.reply_text("Yerli arama motoru ararımı kullanmak ister misin? 😃",
+                                      reply_markup=InlineKeyboardMarkup(reklamkey),
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
             msg.edit_text("Tamam!")
             time.sleep(5)
@@ -69,7 +70,7 @@ def username(update, context):
             print(format_exc())
             msg.edit_text("Tekrar deneyin 😕😕 Lütfen kullanıcı adını kontrol edin")
     else:
-        update.message.reply_html("Bu bot yalnızca Profil resminin indirilmesini destekler, lütfen medya url'si göndermeyin.")
+        update.message.reply_html("Bu bot yalnızca Profil resminin indirilmesini destekler, lütfen medya urlsi göndermeyin.")
 
 
 def source(update, context):
