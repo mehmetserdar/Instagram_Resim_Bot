@@ -1,40 +1,37 @@
 ## Instagram DP Saver Bot
 
-[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fanishgowda21%2FInstagram_DP_Saver_Bot&count_bg=%237268DF&title_bg=%23555555&icon=instagram.svg&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ![Logo](https://github.com/phantom2152/picsforpros/raw/main/photo_2021-08-29_20-24-02.jpg)
 
-Instagram DP Saver Bot is a telegram bot that can send you anyone's instagram profile picture
+Instagram Resim Bot, size herhangi birinin instagram profil resmini gönderebilen bir telegram botudur.
 
-## Features
+## Özellikler
 
-- Any valid username or profile url is accepted
-- Meta data such as Name,follwers,followees info is also sent
+- Herhangi bir geçerli kullanıcı adı veya profil URL'si kabul edilir
+- Ad, takipçiler, takipçiler bilgisi gibi meta veriler de gönderilir
 
-## Deployment
+## Dağıtım
 
-### Please read all the deployment instructions before deploying the bot
+### Botu dağıtmadan önce lütfen tüm dağıtım talimatlarını okuyun
 
-- Go to [BotFather](https://telegram.dog/BotFather)
+- [BotFather](https://telegram.dog/BotFather) a gidin
 
-- Create a bot and get your API token
+- Bir bot oluşturun ve API tokenı alın
 
-- Deploy the bot here
+- Botu buraya dağıtın
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/anishgowda21/Instagram_DP_Saver_Bot)
+[![Yükle](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/mehmetserdar/Instagram_Resim_Bot)
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables
+Bu projeyi çalıştırmak için aşağıdaki ortam değişkenlerini eklemeniz gerekecek
 
-`Telegram bot API token`
+"Telegram bot API tokenı"
 
-`Your telegram username`
+`Telegram kullanıcı adınız`
 
-`The name of the heroku app where you are deploying your bot`
+"Botunuzu yerleştirdiğiniz heroku uygulamasının adı"
 
-## Watch the video here
 
-<a href = "https://youtu.be/lLRP9j_VizM"><img src="https://raw.githubusercontent.com/anishgowda21/SVG_for_README/main/youtube-minimal-icon-1.svg" width="100px"></a>
-
-### You can find the working example [here](https://telegram.dog/insta_dp_saver_bot)
+### Çalışma örneğini [burada](https://telegram.dog/instagramresimbot)  bulabilirsiniz 
