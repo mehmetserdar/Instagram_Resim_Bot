@@ -8,8 +8,8 @@ import time
 from consts import *
 import re
 
-'''Coded by Anish Gowda 😃😃😃😃'''
-
+'''Coded by Anish Gowda'''
+'''Edited by Mehmet Serdar'''
 
 L = Instaloader()
 TOKEN = os.getenv("BOT_TOKEN")
@@ -33,16 +33,16 @@ def start(update, context):
 
 
 def help_msg(update, context):
-    update.message.reply_text("Send Any instagram users username(without @) or their profile url to get their profile pricture")
+    update.message.reply_text("Profil resimlerini almak için bir instagram kullanıcı adı (@ olmadan) veya profil url'lerini gönderin")
 
 
 def contact(update, context):
     keyboard = [[InlineKeyboardButton(
-        "Contact", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
+        "İletişim", url=f"telegram.me/{TELEGRAM_USERNAME}")], ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
-    update.message.reply_text('Contact The Maker:', reply_markup=reply_markup)
+    update.message.reply_text('Geliştirici ile iletişime geç:', reply_markup=reply_markup)
 
 # get the username and send the DP
 
@@ -51,7 +51,7 @@ def username(update, context):
     query = update.message.text
 
     if not re.compile(mediaregpat).search(query):
-        msg = update.message.reply_text("Downloading...")
+        msg = update.message.reply_text("İndiriliyor...")
         if re.compile(proregpat).search(query):
             query = get_username(query)
         chat_id = update.message.chat_id
@@ -61,19 +61,19 @@ def username(update, context):
             context.bot.send_photo(
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
-            update.message.reply_text("Can You support me by rating this bot 😃",
+            update.message.reply_text("Bu botu derecelendirerek bana destek olur musunuz? 😃",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
             msg.edit_text("finished.")
             time.sleep(5)
         except Exception as e:
             print(format_exc())
-            msg.edit_text("Try again 😕😕 Check the username correctly")
+            msg.edit_text("Tekrar deneyin 😕😕 Lütfen kullanıcı adını kontrol edin")
     else:
-        update.message.reply_html("This bot only supports downloading of Profile picture please do not send media url.")
+        update.message.reply_html("Bu bot yalnızca Profil resminin indirilmesini destekler, lütfen medya url'si göndermeyin.")
 
 
 def source(update, context):
-    update.message.reply_text("You can get the source code of this bot here \n\n https://github.com/anishgowda21/Instagram_DP_Saver_Bot")
+    update.message.reply_text("Bu botun kaynak koduna buradan ulaşabilirsiniz. \n\n https://github.com/mehmetserdar/Instagram_Resim_Bot")
 
 
 def error(update, context):

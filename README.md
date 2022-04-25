@@ -28,11 +28,11 @@ Instagram Resim Bot, size herhangi birinin instagram profil resmini gönderebile
 
 Bu projeyi çalıştırmak için aşağıdaki ortam değişkenlerini eklemeniz gerekecek
 
-"Telegram bot API tokenı"
+`Telegram bot API tokenı`
 
 `Telegram kullanıcı adınız`
 
-"Botunuzu yerleştirdiğiniz heroku uygulamasının adı"
+`Botunuzu yerleştirdiğiniz heroku uygulamasının adı`
 
 
 ### Çalışma örneğini [burada](https://telegram.dog/instagramresimbot)  bulabilirsiniz 

@@ -3,23 +3,24 @@ from telegram.utils.helpers import escape_markdown as es
 
 
 def welcome_msg():
-    welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
- <i>Send me anyones instagram username or profile url to get their DP</i>
- ex : <b>virat.kohli</b> , <b>thenameisyash</b> etc'''
+    welcome_msg = '''<b>Bot'a Hoş Geldiniz</b>🖐🖐
+  <i>DP'lerini almak için bana herhangi birinin instagram kullanıcı adını veya profil URL'sini gönderin</i>
+  ör: <b>goturkiye</b> , <b>acunilicali</b>, <b>alexcfc10</b> vb.'''
 
     return welcome_msg
 
 
 def acc_type(val):
     if(val):
-        return "🔒Private🔒"
+        return "🔒Gizli🔒"
     else:
-        return "🔓Public🔓"
+        return "🔓Açık🔓"
 
 
 def create_caption(user):
-    caption_msg = f'''📛*Name*📛: {es(user.full_name,version=2)} \n😁*Followers*😁: {es(str(user.followers),version=2)} \n🤩*Following*🤩: {es(str(user.followees),version=2)}\
-        \n🧐*Account Type*🧐: {acc_type(user.is_private)} \n\nThank You For Using The bot 😀😀'''
+    caption_msg = f'''📛*İsim*📛: {es(user.full_name,version=2)} \n
+    📛*İsim*📛: {es(user.full_name,version=2)} \n😁*Takipçi*😁: {es(str(user.followers),version=2)} \n🤩*Takip*🤩: {es(str(user.followees),version=2)}\
+        \n🧐*Hesap Tipi*🧐: {acc_type(user.is_private)} \n\nBotu kullandığınız için teşekkürler😀😀'''
 
     return caption_msg
 
@@ -39,4 +40,4 @@ def get_username(url):
 
 
 ratingkey = [[InlineKeyboardButton(
-    "Rate me ❤️", url="https://t.me/BotsArchive/1657")]]
+    "Ana Sayfan Yap", url="https://anasayfa.link")]]
