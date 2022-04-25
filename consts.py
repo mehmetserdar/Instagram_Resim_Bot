@@ -18,8 +18,7 @@ def acc_type(val):
 
 
 def create_caption(user):
-    caption_msg = f'''📛*İsim*📛: {es(user.full_name,version=2)} \n
-    📛*İsim*📛: {es(user.full_name,version=2)} \n😁*Takipçi*😁: {es(str(user.followers),version=2)} \n🤩*Takip*🤩: {es(str(user.followees),version=2)}\
+    caption_msg = f'''✒️*İsim*✒️: {es(user.full_name,version=2)} \n📷*Gönderi*📷: {es(user.posts,version=2)} \n😁*Takipçi*😁: {es(str(user.followers),version=2)} \n🤩*Takip*🤩: {es(str(user.followees),version=2)}\
         \n🧐*Hesap Tipi*🧐: {acc_type(user.is_private)} \n\nBotu kullandığınız için teşekkürler😀😀'''
 
     return caption_msg
@@ -40,4 +39,4 @@ def get_username(url):
 
 
 ratingkey = [[InlineKeyboardButton(
-    "Ana Sayfan Yap", url="https://anasayfa.link")]]
+    "Android Uygulamasını İndir", url="https://play.google.com/store/apps/details?id=com.mobuyg.ararim")]]

@@ -61,9 +61,9 @@ def username(update, context):
             context.bot.send_photo(
                 chat_id=chat_id, photo=user.profile_pic_url,
                 caption=caption_msg, parse_mode='MarkdownV2')
-            update.message.reply_text("Bu botu derecelendirerek bana destek olur musunuz? 😃",
+            update.message.reply_text("Yerli arama motoru ararımı kullanmak ister misin? 😃",
                                       reply_markup=InlineKeyboardMarkup(ratingkey))
-            msg.edit_text("finished.")
+            msg.edit_text("Tamam!")
             time.sleep(5)
         except Exception as e:
             print(format_exc())
