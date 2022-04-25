@@ -1,19 +1,19 @@
 {
-    "name" : "Instagram DP Saver Bot",
-    "description" : "Simple telegram bot to get anyones instagram DP",
-    "repository" : "https://github.com/anishgowda21/Instagram_DP_Saver_Bot",
+    "name" : "Instagram Resim Botu",
+    "description" : "Birinin instagram kullanıcı resmini görmek için basit telegram botu",
+    "repository" : "https://github.com/mehmetserdar/instagram-resim-bot",
     "keywords" : ["instagram" , "telegram" , "telegram bot", "python"],
     "env" : {
         "BOT_TOKEN" : {
-            "description" : "Enter your telegram bot token",
+            "description" : "telegram bot tokenızı girin",
             "value" : ""
         },
         "APP_NAME" : {
-            "description" : "Enter your heroku app name",
+            "description" : "heroku app adınızı girin",
             "value" : ""
         },
         "TELEGRAM_USERNAME" :{
-            "description" : "Enter your telegram username",
+            "description" : "telegram kullanıcı adınızı girin",
             "value" : ""
         }
     }
