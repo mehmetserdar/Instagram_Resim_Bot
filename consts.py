@@ -32,7 +32,7 @@ def get_username(url):
 
 def create_caption(user):
     caption_msg = f'''⭐*İsim*⭐: {es(user.full_name,version=2)} \n⭐*Takipçi*⭐: {es(str(user.followers),version=2)} \n⭐*Takip Edilen*⭐: {es(str(user.followees),version=2)}\
-        \n⭐*Hesap Tipi*⭐: {acc_type(user.is_private)} \n⭐*Takip Et*⭐: https://instagram.com/{es(user.username)} \n\nBotu kullandığınız için teşekkürler!'''
+        \n⭐*Hesap Tipi*⭐: {acc_type(user.is_private)} \n\nBotu kullandığınız için teşekkürler!'''
 
     return caption_msg
 
