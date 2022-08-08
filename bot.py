@@ -73,7 +73,7 @@ def username(update, context):
 
 
 def source(update, context):
-    update.message.reply_text("Bu botun kaynak koduna buradan ulaşabilirsiniz. \n\n https://github.com/mehmetserdar/Instagram_Resim_Bot")
+    update.message.reply_text("Kaynak koduna buradan ulaşabilirsiniz. \n\n https://github.com/mehmetserdar/instagram-resim-bot")
 
 
 def error(update, context):
